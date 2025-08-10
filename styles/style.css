@@ -19,7 +19,6 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 h1,
@@ -63,9 +62,7 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
-} 
-
-
+}
 
 .content {
   display: flex;
@@ -74,7 +71,6 @@ ol {
   min-height: 534px;
   max-width: 1140px;
   gap: 30px;
-
 }
 
 .result {
@@ -91,28 +87,25 @@ ol {
   width: 711px;
 }
 
-
 .result__video {
-object-fit: cover;
-height: 100%;
-width: 100%;
-
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .search-form {
-display: flex;
-flex-direction: row;
-align-items: start;
-justify-content: space-between;
-align-items: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
 }
 
 .search-form__fieldset-title {
-font-family: Fira Sans Condensed;
-font-weight: 400;
-font-style: Regular;
-font-size: 18px;
-padding-bottom: 6px;
+  font-family: 'Fira Sans' Condensed;
+  font-weight: 400;
+  font-style: regular;
+  font-size: 18px;
+  padding-bottom: 6px;
 }
 
 .search-form__fieldset {
@@ -132,15 +125,11 @@ padding-bottom: 6px;
 
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans' Condensed;
   font-weight: 400;
-  font-style: Regular;
+  font-style: regular;
   font-size: 18px;
-  leading-trim: NONE;
-  
 }
-
-
 
 .search-form__checkbox-list {
   display: flex;
@@ -165,30 +154,30 @@ padding-bottom: 6px;
 }
 
 .search-form__pseudo-checkbox::after {
-  content: "";
+  content: '';
   display: block;
   background-color: #fff;
   height: 100%;
   width: 100%;
   opacity: 0;
 }
+
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
   opacity: 1;
 }
 
-.search-form__label:has(.search-form__checkbox):hover  .search-form__label-text{
-text-decoration: underline;
-
+.search-form__label:has(.search-form__checkbox):hover .search-form__label-text {
+  text-decoration: underline;
 }
 
 .button {
   height: 34px;
   background-color: transparent;
   border: 1px solid #fff;
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans' Condensed;
   font-weight: 700;
-  font-style: Bold;
-  color:#fff;
+  font-style: bold;
+  color: #fff;
   font-size: 18px;
   text-align: center;
   cursor: pointer;
@@ -204,7 +193,7 @@ text-decoration: underline;
 
 .search-form__submit-button {
   width: 194px;
-  align-self:flex-end;
+  align-self: flex-end;
   text-align: center;
   vertical-align: middle;
 }
@@ -214,32 +203,19 @@ text-decoration: underline;
   min-height: 34px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 .content__details {
   display: flex;
   flex-direction: column;
- height: 100%;
- gap: 20px;
- min-height: 534px;
- 
+  height: 100%;
+  gap: 20px;
+  min-height: 534px;
 }
 
 .title {
   padding-top: 15px;
   font-family: Oswald;
   font-weight: 700;
-  font-style: Bold;
+  font-style: bold;
   font-size: 75px;
   line-height: 0.94;
   text-transform: uppercase;
@@ -247,14 +223,14 @@ text-decoration: underline;
 }
 
 .content__accent {
-  opacity: 30%;
+  opacity: 0.3;
   line-height: 0.94;
 }
 
 .content__list-container {
   display: flex;
   position: relative;
-  flex-direction: column;  
+  flex-direction: column;
   gap: 30px;
   height: 298px;
   min-width: 399px;
@@ -271,10 +247,10 @@ text-decoration: underline;
 
 .content__card-link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #fff;
   display: block;
   margin-left: 1px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .content__card-link_current {
@@ -290,7 +266,7 @@ text-decoration: underline;
 }
 
 .content__card-link:focus-visible {
-  outline: 1px solid #fff; 
+  outline: 1px solid #fff;
 }
 
 .content__video-card {
@@ -306,7 +282,7 @@ text-decoration: underline;
   width: 196px;
   font-family: Oswald;
   font-weight: 700;
-  font-style: Bold;
+  font-style: bold;
   font-size: 30px;
   text-transform: uppercase;
   text-overflow: ellipsis;
@@ -315,9 +291,9 @@ text-decoration: underline;
 }
 
 .content__video-card-description {
-  font-family: Fira Sans Condensed;
+  font-family: 'Fira Sans' Condensed;
   font-weight: 400;
-  font-style: Regular;
+  font-style: regular;
   font-size: 18px;
   line-height: 0.7;
 }
@@ -325,7 +301,7 @@ text-decoration: underline;
 .content__video-card-thumbnail {
   height: 103px;
   min-width: 194px;
-  object-fit:cover;
+  object-fit: cover;
   object-position: center;
 }
 
