@@ -97,7 +97,7 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: end;
+  align-items: start;
 }
 
 .search-form__fieldset-title {
@@ -120,6 +120,7 @@ ol {
   color: #fff;
   appearance: none;
   width: 225px;
+  font-size: 18px;
   padding: 2.5px 0;
 }
 
@@ -254,7 +255,7 @@ ol {
 }
 
 .content__card-link_current {
-  background-color: #545051;
+  background-color: transparent;
 }
 
 .content__card-link:active {
