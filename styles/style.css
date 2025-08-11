@@ -68,7 +68,6 @@ ol {
   display: flex;
   flex-direction: row;
   align-items: end;
-  min-height: 534px;
   max-width: 1140px;
   gap: 30px;
 }
@@ -203,7 +202,6 @@ ol {
   flex-direction: column;
   height: 100%;
   gap: 20px;
-  min-height: 534px;
 }
 
 .title {
