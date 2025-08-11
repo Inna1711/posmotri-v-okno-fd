@@ -96,35 +96,46 @@ ol {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-end;
 }
 
 .search-form__fieldset-title {
   font-family: inherit;
   font-weight: 400;
   font-size: inherit;
-  padding-bottom: 6px;
+  padding-bottom: 5px;
 }
 
 .search-form__fieldset {
   border: none;
+  align-items: flex-end;
 }
 
 .search-form__textfield {
+  all: unset;
+  cursor: text;
+  border: none;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   background-color: transparent;
   font-family: inherit;
-  color: #fff;
+  font-weight: 400;
+  color: inherit;
   appearance: none;
   width: 225px;
   font-size: 18px;
   padding: 2.5px 0;
 }
 
+.search-form__textfield:focus {
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
 .search-form__textfield::placeholder {
   color: rgb(255 255 255 / 0.7);
-  font-stretch: semi-condensed;
+  font-family: inherit;
 }
 
 .search-form__checkbox-list {
@@ -140,6 +151,7 @@ ol {
   width: fit-content;
   gap: 5px;
   cursor: pointer;
+  font-family: inherit;
 }
 
 .search-form__pseudo-checkbox {
@@ -171,6 +183,7 @@ ol {
   background-color: transparent;
   border: 1px solid #fff;
   font-weight: 700;
+  font-family: inherit;
   color: currentColor;
   font-size: inherit;
   text-align: center;
@@ -205,7 +218,6 @@ ol {
 }
 
 .title {
-  padding-top: 15px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-style: bold;
@@ -217,7 +229,6 @@ ol {
 
 .content__accent {
   opacity: 0.3;
-  line-height: 0.94;
 }
 
 .content__list-container {
@@ -247,7 +258,7 @@ ol {
 }
 
 .content__card-link_current {
-  background-color: transparent;
+  background-color: #545050;
 }
 
 .content__card-link:active {
@@ -267,11 +278,9 @@ ol {
   flex-direction: row;
   align-items: flex-start;
   object-fit: contain;
-  padding-right: 0;
 }
 
 .content__video-card-title {
-  padding-top: 0;
   width: 196px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
@@ -280,11 +289,12 @@ ol {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  padding-top: 0;
+  line-height: 1;
 }
 
 .content__video-card-description {
-  line-height: 0.7;
-  padding-top: 1px;
+  padding-top: 5px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
